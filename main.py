@@ -23,8 +23,8 @@ if __name__ == "__main__":
     executor.start_webhook(
         dispatcher=dp,
         webhook_path="/webhook",
-        on_startup=lambda _: print("Bot started"),
         skip_updates=True,
         host="0.0.0.0",
         port=8000
     )
+
