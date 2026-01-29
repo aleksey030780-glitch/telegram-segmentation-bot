@@ -20,11 +20,7 @@ dp.register_message_handler(
 )
 
 if __name__ == "__main__":
-    executor.start_webhook(
-        dispatcher=dp,
-        webhook_path="/webhook",
-        skip_updates=True,
-        host="0.0.0.0",
-        port=8000
-    )
+    print("Bot started (polling)")
+    executor.start_polling(dp, skip_updates=True)
+
 
